@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroPeu</title>
+    <link rel="icon" type = 'image/png' href="img/logo.png">
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    
+    <div class = 'containerdosheader'>
+        <div class = "header1">
+            <div class="caixa2">
+            </div>
+            <div class = "caixa">
+                <a id = 'login' href=""></a>
+                <a id = 'login' href=""></a>
+            </div> 
+            
+        </div>
+        <div class = "header2">
+                <div class="home">
+                    <a href="index.html"><img id = "home" src = "img/botaohome.png"></img></a>
+                </div>
+            <div class = "categorias">
+                <a id = 'link' href="mouses.html">MOUSE</a>
+                <a id = 'link' href="teclados.html">TECLADO</a>
+                <a id = 'link' href="fones.html">FONE</a>
+                <a id = 'link' href="">OUTROS +</a>
+
+            </div>
+            <div class = "compras">
+                <a href="comprando.html"><img id = "sacola" src = "img/sacola.png"></img></a>
+                <a href="index.html"><img id = "lupa" src = "img/lupa.png"></img></a>
+                <input type = "text" placeholder = "Digite o que você procura..." id="textoLupa"></input>
+                <span id="contadorSacola"></span>
+                <span></span>
+            </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="disfarce"></div>
+
+    <br> <br> <br>
+    <h1 id="carrinho">CARRINHO DE COMPRAS</h1>
+    <div class="box-gray">
+        <div class="box-green">
+            <div class="pedro">
+                <div class = 'separar'>
+                    <a id="carrinho1">Produto</a>
+                </div>
+                <div class = 'separar2'>
+                    <a id="carrinho1">Preço</a>
+                </div>
+                <div class = 'separar3'>
+                    <a id="carrinho1">Quantidade</a>
+                </div>
+                <div class = 'separar4'>
+                    <a id="carrinho1">SubTotal</a>
+                </div>
+            </div>
+            <div class="box-purple">
+                <div class="juntin">
+                    <div class="mini-box"></div>
+                    <div class = "gmol">Glorious Model O</div>
+                    <div class="mini-box1">
+                        <strong><a>R$</a><span id="carPreco">199.99</span></strong>
+                    </div>
+                    <div class="mini-box2">
+                        <button id="menos">-</button>
+                        <span id="Quantidade">1</span>
+                        <button id="mais">+</button>
+
+                    </div>
+                    <div class="mini-box3">
+                        <script>
+
+                        </script>
+                        <strong><a>R$</a><span id="SubTotal">199.99</span></strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <div class = 'linhacodigo'>
+            <div class="containerdotitulo1">
+                <h3 class = 'caracterestitulo1'>CÓDIGO PROMOCIONAL:</h3>
+            </div>
+            <div class="containerdotitulo2">
+                <h3 class = 'caracterestitulo2'></h3>
+            </div>
+        </div>
+        <div class = "aabw">
+            <div class = "containerdocodigopromocional">
+                <input type = "text" placeholder = "Digite o código promocional..." id = "promocionalinput"></input>
+                <button id = "botaoazul">APLICAR CUPOM</button>
+                
+                
+            </div>
+            <div class = "containerdosubtotal">
+                <table>
+                    <tr>
+                        <td><strong>TOTAL CARRINHO:</strong></td>
+                        <td><strong><a>R$</a><span id = "numeral2">199.99</strong></span></td>
+                    </tr>
+                    <span id="descontoMsg"></span>
+                </table>
+                
+                <button id = "botaoazul2" onclick="mostrarAlerta()">FINALIZAR COMPRA</button>
+                
+            </div>
+        </div> 
+
+
+
+
+    </div>
+    
+
+
+
+    <div id="email">
+        <div class="grudar">
+        <h2 id="post">FIQUE POR DENTRO DAS NOVIDADES</h2>
+        <a id="textinho">Receba as novidades da RetroPeu no seu E-mail.</a>
+        <br>
+        <div class="camera">
+        <input type="text" placeholder="Digite seu email..." id="ic"></input> <button onclick="mostrarEmail()" id="btn" >Enviar</button>
+        </div>
+        </div>
+    </div>
+    <div class = "footerMenor">
+        <div class="calica">
+            <a id="pagamentos">FORMAS DE PAGAMENTO</a>
+            <a id="pagamentos">SEGURANÇA</a>
+        </div>
+        <div class="sacola">
+            <div class="fotinhas"></div>
+            <div class="fotinhas1"></div>
+        </div>
+    </div>
+
+
+
+    <div class="footerMaior">
+            
+            <div class="danger">
+            <div class="logoB"></div>
+                
+            <br>
+            <a class="cinza">RETROPEU: ARTIGOS DE INFORMÁTICA ATACADO E VAREJO.</a>
+            <br>
+            <a class="cinza">CNPJ: 23.343.434/0002-18 | Niterói-RJ</a>
+            <br>
+            <br>
+            <a class="branco">ATENDIMENTO</a>
+            <br>
+            <a class="branco">De segunda a sexta das 8:30 às 12H / 13H às 18H.</a>
+            <br>
+            <a class="cinza">SOMOS E-COMMERCE - NÃO TEMOS ATENDIMENTO LOCAL.</a>
+
+            </div>
+    </div> 
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+      let qtdd = 1;  
+      const valorInicial = parseFloat(document.getElementById('carPreco').textContent.trim()); 
+      const quantidade = document.getElementById('Quantidade');
+      const subtotal = document.getElementById('SubTotal');
+      const cupomDesconto = document.getElementById('promocionalinput');
+      const aplicarDesconto = document.getElementById('botaoazul');
+      const precoFinal1 = document.getElementById('numeral2');
+      const descontoMsg = document.getElementById('descontoMsg');
+
+      let descontoPercentual = 0;
+
+    
+      
+      
+      function atualizar() {
+          const valorSubtotal = (valorInicial * qtdd).toFixed(2); 
+          subtotal.textContent = valorSubtotal;
+
+          const precoFinal = valorSubtotal * (1 - descontoPercentual / 100);
+                precoFinal1.textContent = precoFinal.toFixed(2); 
+      }
+
+      atualizar();
+
+      document.getElementById('menos').addEventListener('click', function () {
+          if (qtdd > 1) {  
+              qtdd--;  
+          }
+          quantidade.textContent = qtdd;
+          atualizar(); 
+      });
+
+     
+      document.getElementById('mais').addEventListener('click', function () {
+          qtdd++;  
+          quantidade.textContent = qtdd;
+          atualizar(); 
+      });
+ 
+  aplicarDesconto.addEventListener('click', function () {
+                const cupom = cupomDesconto.value.trim().toUpperCase();
+
+                
+                if (cupom === 'DESCONTO10') {
+                    descontoPercentual = 10;  
+                    alert('Desconto aplicado!');
+                    descontoMsg.textContent = 'CUPOM: "DESCONTO10" 10% DE DESCONTO.';
+                    descontoMsg.style.color = 'green';
+
+                } else if (cupom === '') {
+                    descontoPercentual = 0;
+                   
+                } else {
+                    descontoPercentual = 0;
+                  
+                }
+                atualizar();  
+            });
+            
+        });                   
+  function mostrarAlerta(){
+  alert("Compra realizada!");
+  }
+  function mostrarEmail(){
+    alert("Email enviado!");
+  }    
+    </script>
+    
+</body>
+
+</html>

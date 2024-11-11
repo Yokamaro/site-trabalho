@@ -1,0 +1,676 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #f5f5f5; /*#272829*/
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.containerdosheader{
+    display:inline-block;
+    background:none;
+    position: fixed;
+    width:100%;
+    height:100px;
+    background: none;
+
+}
+
+.header1{
+    background: black;
+    width:100%;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header2{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caixa{
+    display: flex;
+    width:300px;
+    background: none;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.caixa2{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:200px;
+    height:100%;
+    background:none;
+    margin-left: 300px;
+}
+
+.categorias{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(0, 0, 0);
+    height:100%;
+    width:600px;
+    justify-content: space-around;
+}
+
+#login{
+    text-decoration: none;
+    font: bold;
+    color: white; 
+}
+
+#link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "JetBrains Mono", monospace;
+    font-style: normal;
+}
+
+
+.barra{
+    border: 1px solid #fff;
+    opacity: .4;
+    height: 12px;
+    margin-left: 8px;
+}
+
+.disfarce{
+    width: 100%;
+    height: 100px;
+
+}
+.compras{
+    align-items:center;
+    justify-content: center;
+    display:flex;
+    width:320px;
+    gap:20px;
+}
+
+#sacola{
+    width: 30px;
+    height: 65%px;
+}
+
+#lupa{
+    width: 30px;
+    height: 65%px;
+}
+
+#dgpg{
+    color: white;
+    font-weight: bold;
+}
+
+.bannerdaloja{
+    background: rgb(0, 0, 0);
+    height:330px;
+    width:100%;
+    background-image: url(img/aaa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vazioroxo{
+ width: 100%;
+ height: 1px;
+ background: none;
+}
+
+.tmm{
+width: 100%;
+height: 200px;
+display: flex;
+background: none;
+gap: 100px;
+justify-content: center;
+}
+
+#tmm1{
+width: 400px;
+height: 200px;
+background: url(img/cliquemouse.png);
+background-size: contain;
+border-radius: 10px;
+transition: 0.2s;
+
+}
+
+#tmm2{
+width: 400px;
+height: 200px;
+background: purple;
+background: url(img/cliqueteclado.png);
+background-size: contain;
+border-radius: 10px;
+transition: 0.2s;
+}
+
+#tmm3{
+width: 400px;
+height: 200px;
+background: purple;  
+background: url(img/cliquemousepad.png);
+background-size: contain;
+border-radius: 10px;
+transition: 0.2s;
+}
+#tmm1:hover{
+    box-shadow: 1px 1px 15px #8b8b8b ; 
+}
+#tmm2:hover{
+    box-shadow: 1px 1px 15px #8b8b8b ; 
+}
+#tmm3:hover{
+    box-shadow: 1px 1px 15px #8b8b8b ; 
+}
+#destaque{
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.itemDestaque{
+   width: 100%;
+   height: 400px;
+   display: flex;
+   gap: 30px;
+   padding-top: 10px;
+   justify-content: center;
+   
+}
+
+.item1{
+background: none;
+width: 315px;
+height: 370px;
+transition: 0.2s;
+box-sizing: border-box;
+}
+
+.item2{
+background: none;
+width: 315px;
+height: 370px;
+border-radius: 10px;
+transition: 0.2s;
+}
+.item3{
+background: none;
+width: 315px;
+height: 370px;
+border-radius: 10px;
+transition: 0.2s;
+}
+.item4{
+background: none;
+width: 315px;
+height: 370px;
+border-radius: 10px;
+transition: 0.2s;
+    }
+
+/*HOVER*/
+
+    .item1:hover{
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px #8b8b8b ; 
+    }
+    .item2:hover{
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px #8b8b8b ; 
+    }
+    .item3:hover{
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px #8b8b8b ; 
+    }
+    .item4:hover{
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px #8b8b8b ; 
+    }
+
+.foto1{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background: url(img/glorious.png);
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.foto2{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background: url(img/gprox.png);
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.foto3{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/vipermini.png);
+    
+}
+.foto4{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/cobra.png);
+    
+}
+.foto5{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background: url(img/mouseazul.png);
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.foto6{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background: url(img/glorious.png);
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.foto7{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/cobra.png);
+    
+}
+.foto8{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/vipermini.png);
+    
+}
+.foto9{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/rk75.png);
+    
+}
+.foto10{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/razerteclado.png);
+    
+}
+.foto11{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/logitechteclado.png);
+    
+}
+.foto12{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/hyperxteclado.png);
+    
+}
+.foto13{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/razerteclado.png);
+    
+}
+.foto14{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/logitechteclado.png);
+    
+}
+.foto15{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/rk75.png);
+    
+}
+.foto16{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/tecladored.png);
+    
+}
+.foto17{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/hyperxfone1.png);
+    
+}
+.foto18{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/redragonfone.png);
+    
+}
+.foto19{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/logitechfone.png);
+    
+}
+.foto20{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/hyperx.png);
+    
+}
+.foto21{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/razer.png);
+    
+}
+.foto22{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/hyperxfone1.png);
+    
+}
+.foto23{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/logitechfone.png);
+    
+}
+.foto24{
+    width: 315px;
+    height: 250px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+    background: url(img/redragonfone.png);
+    
+}
+#desc1{
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "JetBrains Mono", monospace;
+    
+}
+
+#preco1{
+    color:#4A4B4F;
+    font-family: "Lato", sans-serif;
+    
+}
+
+h3{
+    font-family: "DM Sans", sans-serif;
+}
+#pix{
+    font-size: 12px;
+    color:green;
+    font-family: "JetBrains Mono", monospace;
+   
+}
+
+.juntar{
+    text-align: center; 
+    background: none;
+}
+#email{  /*EMAIL PARA RECEBER NOVIDADES*/
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+}
+#post{
+    padding-top: 40px;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+}
+#textinho{
+    color: #999;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.grudar{
+    text-align: center;
+}
+#ic{
+    padding: 15px 32px;
+    border-radius: 10px;
+    font-family: "JetBrains Mono", monospace;
+}
+#btn{
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: "JetBrains Mono", monospace;
+}
+
+#btn:hover{
+    background-color: white;
+    color: black;
+}
+.camera{
+margin-top: 15px;
+}
+
+.footerMenor{
+    width:100%;
+    height:178px;
+    background: #424242;
+}
+.footerMaior{
+    width:100%;
+    height:400px;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#pagamentos{
+    
+    color: white;
+    font-size: 15px;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.calica{
+    padding-top: 10px;
+    justify-content: space-around;
+    display: flex;
+    gap: 20px;
+}
+
+.fotinhas{
+    width: 400px;
+    height: 130px;
+    background: url(img/formasdepagamento.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.fotinhas1{
+    width: 400px;
+    height: 110px;
+    background: url(img/seguranca.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.sacola{
+    padding-top: 10px;
+    justify-content: space-around;
+    display: flex;
+    gap: 20px;
+}
+
+.cinza{
+    color: #8b8b8b;
+    font-family: "JetBrains Mono", monospace;
+}
+.logoB{
+    margin-left:60px;
+    background: url(img/logoloja.png);
+    width:450px;
+    height:200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.danger{
+    display: block;
+    text-align: center;
+}
+.branco{
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+}
+#home{
+    margin-bottom: 2px;
+    margin-right: 10px;
+    height:40px;
+    width:40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#textoLupa{
+    height:15px;
+    width:300px;
+    padding: 10px 15px;        
+    font-size: 16px;           
+    border: 2px solid #ccc;   
+    border-radius: 15px;      
+    outline: none;            
+    transition: all 0.3s ease;
+}
+#textoLupa:focus{
+    border-color: #007BFF;   
+    background-color: #f0f8ff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
